@@ -1285,7 +1285,8 @@ async function main() {
         }
 
         if (i < accounts.length - 1) {
-            const sleepTime = 3 + Math.floor(Math.random() * 8);
+            const sleepTime = 15 + Math.floor(Math.random() * 16);
+            log(`账号间等待 ${sleepTime} 秒...`);
             await new Promise(r => setTimeout(r, sleepTime * 1000));
         }
     }
